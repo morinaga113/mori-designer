@@ -1,0 +1,124 @@
+$primary: rgb(112, 30, 30);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    margin: auto;
+    width: 90%;
+    max-width: 1140px;
+    // background-color: rgb(139, 139, 139);
+}
+
+// ====================================
+// 頁首
+// ====================================
+
+header {
+    background-color: rgb(255, 249, 249);
+    }
+
+header>.container>h1 {
+    padding-top: 20px;
+    color: $primary
+}
+
+// header>.container>h1>a {
+//     color: $primary;
+// }
+
+header>.container>nav>ul{
+    display: flex;
+        }
+header>.container>nav>ul>li{
+    margin-right: 50px;
+    }
+header>.container>nav>ul>li>a{
+    line-height: 80px;
+    color: $primary;
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    }
+
+// ====================================
+// 內容區塊
+// ====================================
+
+//圖片相關
+.img-fluid{
+    width: 100%;
+}
+
+.img-radius{
+    border-radius: 6px;
+}
+
+.img-circle{
+    border-radius: 100%;
+}
+
+//文字相關
+
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-justify{
+    text-align: justify;
+}
+
+//區塊樣式
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  // 四欄式
+.col-3{
+    width: calc(100% / 4 - 30px);
+    margin:0px 15px 40px 15px;
+    /*上右下左*/
+}
+// 三欄式
+.col-4{
+    width: calc(100% / 3 - 30px);
+    margin:0px 15px 40px 15px;
+    /*上右下左*/
+}
+// 兩欄式
+.col-6{
+    width: calc(100% / 2 - 30px);
+    margin:0px 15px 40px 15px;
+    /*上右下左*/
+}
+.col-8{
+    width: calc(100% / 1.5 - 30px);
+    margin:0px 15px 40px 15px;
+    /*上右下左*/
+}
+.col-9{
+    width: calc(100% / 1.33333333333 - 30px);
+    margin:0px 15px 40px 15px;
+    /*上右下左*/
+}
